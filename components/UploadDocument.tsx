@@ -52,7 +52,7 @@ export default function UploadDocument() {
   };
 
   return (
-    <div className="upload-col">
+    <div className="upload-col isolate">
       <div className="upload-card flex flex-col gap-3 h-full w-[min(500px,100%)]">
         <h3 className="upload-title text-2xl text-center font-bold ">
           Upload Your 510(k) Document

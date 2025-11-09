@@ -1,6 +1,14 @@
 import Statistics from "@/components/Statistics";
 import UploadDocument from "@/components/UploadDocument";
 import UploadExplainer from "@/components/UploadExplainer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | Rag ComplyAI",
+  description:
+    "Rag ComplyAI is an advanced compliance analytics platform powered by AI, specializing in regulatory submissions and FDA documentation analysis.",
+  keywords: ["compliance", "AI", "regulatory", "FDA", "analytics", "platform"],
+};
 
 export default function Home() {
   return (

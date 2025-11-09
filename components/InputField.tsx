@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChangeEvent } from "react";
+import { ChangeEvent, RefObject } from "react";
 
 interface Props {
   type: string;
@@ -8,12 +8,14 @@ interface Props {
   value: string;
   disable?: boolean;
   showForgetPassword?: boolean;
+  ref?: RefObject<HTMLInputElement | null>;
 }
 export default function InputField({
   showForgetPassword = false,
   placeholder,
   type,
   onChange,
+  ref,
   disable,
   value,
 }: Props) {
@@ -28,6 +30,7 @@ export default function InputField({
         </Link>
       )}
       <input
+        ref={ref}
         disabled={disable}
         type={type}
         value={value}
