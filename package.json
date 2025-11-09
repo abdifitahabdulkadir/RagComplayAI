@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "email": "email dev",
-    "postinstall": "prisma generate"
+    "email": "email dev"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
