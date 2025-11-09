@@ -42,13 +42,13 @@ export default function SignWithGoogle({ type }: Props) {
       className="w-full flex items-center justify-center gap-2 border px-4 py-2 hover:bg-indigo-800 cursor-pointer hover:text-white border-black/10 rounded-[10px]"
     >
       <GoogleSVGIcon />
-      {isLoading
-        ? type === "sign-in"
-          ? "Signing..."
-          : "Signup..."
-        : type === "sign-in"
-        ? "Sign In with Google"
-        : "Sign Up with Google"}
+      {isLoading ?
+        type === "sign-in" ?
+          "Signing..."
+        : "Signup..."
+      : type === "sign-in" ?
+        "Sign In with Google"
+      : "Sign Up with Google"}
     </button>
   );
 }
